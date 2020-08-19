@@ -10,6 +10,7 @@ import {
   externalSchematic,
 } from '@angular-devkit/schematics';
 import { getProjectConfig } from '@nrwl/workspace';
+import { SchematicOptions } from './schema';
 
 function generateLibrary(schema: any): Rule {
   return externalSchematic('@nrwl/workspace', 'lib', {
@@ -29,7 +30,7 @@ function generateFiles(schema: any): Rule {
   };
 }
 
-export default function (schema: any): Rule {
+export default function (schema: SchematicOptions): Rule {
   return (tree: Tree, context: SchematicContext) => {
     return chain([generateLibrary(schema), generateFiles(schema)])(
       tree,
