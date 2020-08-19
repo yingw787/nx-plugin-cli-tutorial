@@ -52,6 +52,12 @@
               }
             ]
           }
+        },
+        "echo": {
+          "builder": "./libs/my-plugin/src/builders/echo:echo",
+          "options": {
+            "textToEcho": "Hello World"
+          }
         }
       }
     },
