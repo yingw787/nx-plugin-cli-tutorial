@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-plugin-cli-tutorial/my-plugin": ["libs/my-plugin/src/index.ts"]
+      "@nx-plugin-cli-tutorial/my-plugin": ["libs/my-plugin/src/index.ts"],
+      "@nx-plugin-cli-tutorial/mylib": ["libs/mylib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

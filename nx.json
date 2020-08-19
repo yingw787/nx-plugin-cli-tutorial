@@ -28,6 +28,9 @@
     "my-plugin-e2e": {
       "tags": [],
       "implicitDependencies": ["my-plugin"]
+    },
+    "mylib": {
+      "tags": []
     }
   }
 }
